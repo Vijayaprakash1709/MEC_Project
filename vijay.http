@@ -1,0 +1,35 @@
+GET http:localhost:3000/
+
+POST http://localhost:1234/new
+content-type: application/json
+
+{
+    "acc_number":3333,
+    "acc_bal":8992.4,
+    "acc_holder":"Hameed"
+}
+GET http://localhost:1234/fetch
+
+POST http://localhost:1234/insert
+Content-Type: application/json
+
+{
+    "Rollno":158,
+    "Name":"Sriraman",
+    "FG_id":0,
+    "Gender_id":0,
+    "Dept_id":0
+}
+
+PUT http://localhost:1234/update
+Content-Type: application/json
+
+{
+    "Rollno":124,
+    "Name":"Noorul",
+    "FG_id":1,
+    "Gender_id":0,
+    "Dept_id":0
+}
+
+DELETE http://localhost:1234/delete/515
