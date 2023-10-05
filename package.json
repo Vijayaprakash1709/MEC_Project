@@ -2,9 +2,9 @@
   "name": "vijay",
   "version": "1.0.0",
   "description": "",
-  "main": "fpdf.js",
+  "main": "check_post.js",
   "scripts": {
-    "start": "nodemon fpdf.js",
+    "start": "nodemon check_post.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
