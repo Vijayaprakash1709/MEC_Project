@@ -2,9 +2,9 @@
   "name": "vijay",
   "version": "1.0.0",
   "description": "",
-  "main": "check_post.js",
+  "main": "check.js",
   "scripts": {
-    "start": "nodemon check_post.js",
+    "start": "nodemon check.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
