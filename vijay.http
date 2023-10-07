@@ -8,6 +8,7 @@ content-type: application/json
     "acc_bal":8992.4,
     "acc_holder":"Hameed"
 }
+
 GET http://localhost:1234/fetch
 
 POST http://localhost:1234/insert
