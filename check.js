@@ -2,14 +2,15 @@ const express = require('express');
 const app = express();
 const path = require('path');
 const fs = require('fs');
+const cors = require('cors');
 
-const port = 3000;
+const port = 1234;
 const mysql=require('mysql2')
 const dataBase=mysql.createConnection({
     host:"localhost",
     user:"root",
     password:"",
-    database:"tech_talk"
+    database:"mec_project"
 })
 
 dataBase.connect((err)=>{
@@ -63,7 +64,7 @@ const pool = [
 
 app.use(express.json());
 app.use(express.static('public')); // Assuming your HTML file is in a 'public' folder
-
+app.use(cors());
 app.get('/api/filterOneStaff/:name/:dept', (req, res) => {
     const { name, dept } = req.params;
     const info = pool.filter((v) => v.name === name && v.Department === dept);
@@ -101,7 +102,7 @@ app.get('/dept/:obj',async(req,res)=>{
     console.log(req.params.obj)
     let received=req.params.obj.split("-")
     console.log(received)
-    dataBase.query("select CName from ecr where dept in(?)",[received],(err,rows)=>{
+    dataBase.query("select * from data_ecr where dept in(?)",[received],(err,rows)=>{
         if(err){
             res.status(500).json({error:err.message})
             return

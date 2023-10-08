@@ -6,6 +6,10 @@ const app=refExp()
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
+const myRoute=express.Router()
+myRoute.use(bodyParser.urlencoded({extended:true}))
+myRoute.use(bodyParser.json())
+
 const dbase=refMysql.createConnection({
     "host":"localhost",
     "user":"root",
@@ -49,3 +53,5 @@ app.post('/new',async(req,res)=>{
     })
 
 })
+
+module.exports=myRoute
