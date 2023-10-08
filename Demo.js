@@ -9,7 +9,7 @@ app.get('',async(req,res)=>{
 })
 
 app.get('/mec',async(req,res)=>{
-    res.send("Full stack development, DevOps Engineer")
+    res.json("Full stack development, DevOps Engineer")
 })
 
 app.get('/cse',async(req,res)=>{

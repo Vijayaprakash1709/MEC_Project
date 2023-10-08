@@ -9,7 +9,7 @@ content-type: application/json
     "acc_holder":"Hameed"
 }
 
-GET http://localhost:1234/fetch
+GET http://localhost:1234/mec
 
 POST http://localhost:1234/insert
 Content-Type: application/json

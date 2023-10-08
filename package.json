@@ -2,9 +2,9 @@
   "name": "vijay",
   "version": "1.0.0",
   "description": "",
-  "main": "check.js",
+  "main": "Demo.js",
   "scripts": {
-    "start": "nodemon check.js",
+    "start": "nodemon Demo.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
