@@ -1,0 +1,149 @@
+/* Basic styling */
+body {
+    font-family: Arial, sans-serif; /* Specify a fallback font */
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    background-color:white;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    max-height: 30px;
+    
+    
+}
+.logosec { 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+  } 
+  a{
+    text-decoration: none;
+    color:black;
+    
+  }
+  .social-icons img {
+    width: 30px; /* Adjust size as needed */
+    margin: 0 10px; /* Adjust spacing between icons */
+}   
+.na:hover{
+    transition: 0.3s;
+    font-size: large;
+    color:red;
+    font-style:oblique;
+}
+
+.head { 
+    height: 100px; 
+    width: 100vw; 
+    padding: 0 30px; 
+    background-color: var(--background-color1); 
+    position: fixed; 
+    z-index: 100; 
+    box-shadow: 1px 1px 15px rgba(161, 182, 253, 0.825); 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+  } 
+.container1 {
+    border-radius: 10px;
+    display:flex;
+    max-width: 1200px;
+    height: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color:darkcyan;
+    
+    
+}
+.container3{
+    color: #fff;
+    text-size-adjust: 12;
+}
+
+    .hai {
+      margin-left: 800px;
+      }
+
+.sec{
+    
+    gap:20px;
+    padding: 20px;
+    background-color:azure;
+}
+
+.container4 {
+    flex-wrap: wrap;
+    display: flex;
+    gap: 20px;
+    justify-content: space-evenly; /* Add this line to evenly distribute space */
+    width: 99%;
+    height: auto;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: rgb(212, 231, 250);
+}
+
+.container5 {
+    border-radius: 3%;
+    display: flex;
+    flex-direction: column;
+    min-width: 176px; /* Adjust to column direction if necessary */
+    max-width: 180px;
+    max-height: 230px;
+    padding: 30px;
+    border: 1px solid rgb(134, 132, 132);
+    background-color: white;
+    transition: border 0.2s ease, cursor 0.1s ease;
+}
+.container5:hover{
+    cursor: pointer;
+    border: 3px solid rgb(126, 92, 80);
+    transition: border 0.1s ease, cursor 0.1s ease;
+    background-color: rgb(201, 232, 221);
+    color:rgb(244, 15, 15);
+}
+.image1{
+    border-radius: 50%;
+    border: 3px solid orange;
+}
+
+
+/* Header styling */
+
+
+
+
+/* Other sections (hero, services, contact, footer) */
+.hero
+ {
+    padding: 20px;
+    background-color:whitesmoke;
+}
+.hero1{
+    padding: 20px;
+    background-color:whitesmoke;
+
+}
+
+
+
+
+
+h1 {
+      /* Adjust color as needed */
+    color: #1f1414;                /* Set text color to white */
+           /* Add padding for spacing */
+    text-align: center;          /* Center the text */
+    font-weight: bold;          /* Make the text bold */
+  }
+  .footer {
+    background-color:orangered;
+    color: #fff; /* Text color contrast */
+    padding: 20px;
+    text-align: center;
+  }
+  
+
