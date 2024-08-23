@@ -1,0 +1,58 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <script>
+        function ans(event){
+            var x = event.target.value;
+            var result=document.getElementById("result");
+            result.textContent=x;
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>Type Something</h1>
+       <input type="text"  oninput=ans(event)>
+       <h1 id="result"></h1>
+    </div>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typing Speed Calculator</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center">Typing Speed Calculator</h1>
+        <div class="card">
+            <div class="card-body">
+                <div id="text-display" class="mb-3">The quick brown fox jumps over the lazy dog.</div>
+                <textarea id="text-input" class="form-control mb-3" placeholder="Start typing here..."></textarea>
+                <div class="d-flex justify-content-center mb-3">
+                    <button id="start-button" class="btn btn-primary mr-2" style="width:100px;height: 47px;" onclick="startTest()">Start</button>
+                    <button id="stop-button" class="btn btn-danger" style="width:100px;height: 47px;" onclick="stopTest()" disabled>Stop</button>
+                </div>
+                <div id="results" class="text-center">
+                    <p>Time: <span id="time">0</span> seconds</p>
+                    <p>Words per minute: <span id="wpm">0</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+
+

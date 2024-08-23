@@ -1,0 +1,38 @@
+input{
+    /* width:max-content; */
+    padding: 10px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid #240047;
+    border-radius: 4px;
+    font-size: 16px;
+}
+input:focus {
+    border-color: #4CAF50;
+    outline: none;
+  }
+  input::placeholder {
+    color: #999;
+    font-style: italic;
+  }
+  label {
+    font-family: poppins, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: #ffffff;
+    display: block;
+    margin-bottom: 5px;
+  }
+  *{
+    font-family: poppins;
+  }
+  .gradient {
+    height: 100vh; 
+    
+    /* Add more stops for a complex gradient */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 24px;
+  }
